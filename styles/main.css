@@ -36,7 +36,7 @@ a {
 	justify-content: space-between; 
 	align-items: center; /* не працює для ссилок (tag <a>)*/
 	
-	grid-template-areas: "cap_logo . services services school . technology . contacts";
+	grid-template-areas: "cap_logo . services school technology contacts";
 
 	
 	/* temporary */
