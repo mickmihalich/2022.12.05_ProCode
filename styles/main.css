@@ -1,5 +1,11 @@
 body {
-	font-family:
+	font-family: "GothamProRegular";
+
+}
+
+a {
+	display: block; /* вже всі а стали блоками */
+	text-decoration: none;
 }
 
 .list1 {
@@ -20,24 +26,51 @@ body {
 	background-color: #ff00ff1e;
 }
 
-.head {
-	display: grid;
+.cap {
+	display: grid;	
 
-	grid-template-columns: auto auto auto auto auto auto;
+	grid-template-columns: auto 1fr auto auto auto auto;
+	
+
+	justify-content: space-between;
+	align-items: center;
+
 	
 	/* temporary */
 	box-sizing: border-box;
 	border: 1px solid #00ff00;
 	background-color: #00ff001e;
+	color: #ffff66; /* для diva - перевірка */
 }
 
-a {
-	text-decoration: none;
+.cap > a {	
+	color: #ffffff;
+	height: 44px;		
+	
+
+	/* temporary */
+	box-sizing: border-box;
+	border: 1px solid #007bff;
+	background-color: #007bff1e;
+}
+
+
+.top_logo {
+	align-self:flex-end; /* не працює - для перевірки */
+}
+
+svg {
+	/* temporary */
+	box-sizing: border-box;
+	border: 2px solid #7b7bff;
+	background-color: #7b7bff1e;	
 }
 
 .top_logo:hover > svg > path:first-child {
 	fill: #BDBDBD;
 }
+
 .top_logo:hover > svg > path:last-child {
 	fill: #828282;
 }
+
