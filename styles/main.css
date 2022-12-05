@@ -30,25 +30,29 @@ a {
 .cap {
 	display: grid;		
 
-	grid-template-columns: auto 1fr auto auto auto auto;
+	grid-template-columns: auto 1fr repeat(4, auto);
 	
-
 	justify-content: space-between; 
 	align-items: center; /* не працює для ссилок (tag <a>)*/
 	
 	grid-template-areas: "cap_logo . services school technology contacts";
 
+	gap: 5em;
+
+	font-size: 14px;
+	line-height: 23px;
+	font-weight: 700;
 	
 	/* temporary */
 	box-sizing: border-box;
 	border: 1px solid #00ff00;
-	background-color: #00ff001e;
-	color: #ffff66; /* для diva - перевірка */
+	background-color: #00ff001e;	
 }
 
 .cap > a {	
 	color: #ffffff;
-	height: 44px;		
+	height: 90px;		
+	padding: 0 7px;
 	
 
 	/* temporary */
@@ -57,12 +61,21 @@ a {
 	background-color: #007bff1e;
 }
 
-.cap:hover > a {
-	FED233
+.cap > a:first-child {
+	padding-left: o;
+}
+
+.cap > a:last-child {
+	padding-right: 0;
+}
+
+.cap > a:hover {
+	color: #FED233;
 }
 
 .top_logo {	
 	grid-area: cap_logo;
+	/*order: 0;*/
 }
 
 .top_logo:hover > svg > path:first-child {
@@ -75,16 +88,20 @@ a {
 
 .cap_item-1 {
 	grid-area: services;
+	/*order: 2;*/
 }
 
 .cap_item-2 {
 	grid-area: school;
+	/*order: 3;*/
 }
 
 .cap_item-3 {
 	grid-area: technology;
+	/*order: 4;*/
 }
 
 .cap_item-4 {
 	grid-area: contacts;
+	/*order: 5;*/
 }
