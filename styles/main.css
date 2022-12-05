@@ -4,7 +4,8 @@ body {
 }
 
 a {
-	display: block; /* вже всі а стали блоками */
+	display: flex;
+	align-items: center;
 	text-decoration: none;
 }
 
@@ -27,13 +28,15 @@ a {
 }
 
 .cap {
-	display: grid;	
+	display: grid;		
 
 	grid-template-columns: auto 1fr auto auto auto auto;
 	
 
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-between; 
+	align-items: center; /* не працює для ссилок (tag <a>)*/
+	
+	grid-template-areas: "cap_logo . services services school . technology . contacts";
 
 	
 	/* temporary */
@@ -54,16 +57,12 @@ a {
 	background-color: #007bff1e;
 }
 
-
-.top_logo {
-	align-self:flex-end; /* не працює - для перевірки */
+.cap:hover > a {
+	FED233
 }
 
-svg {
-	/* temporary */
-	box-sizing: border-box;
-	border: 2px solid #7b7bff;
-	background-color: #7b7bff1e;	
+.top_logo {	
+	grid-area: cap_logo;
 }
 
 .top_logo:hover > svg > path:first-child {
@@ -74,3 +73,18 @@ svg {
 	fill: #828282;
 }
 
+.cap_item-1 {
+	grid-area: services;
+}
+
+.cap_item-2 {
+	grid-area: school;
+}
+
+.cap_item-3 {
+	grid-area: technology;
+}
+
+.cap_item-4 {
+	grid-area: contacts;
+}
