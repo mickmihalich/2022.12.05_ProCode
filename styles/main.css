@@ -3,13 +3,13 @@ body {
 
 }
 
-a {
-	display: flex;
-	align-items: center;
+a {	
 	text-decoration: none;
 }
 
 .list1 {
+	/* 1st page with big background page*/
+	/* One Big Block */
 	background-image: url(../images/back.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -22,9 +22,9 @@ a {
 	margin: 0 auto;
 
 	/* temporary */
-	box-sizing: border-box;
+	/*	box-sizing: border-box;
 	border: 1px solid #ff00ff;
-	background-color: #ff00ff1e;
+	background-color: #ff00ff1e;*/
 }
 
 .cap {
@@ -37,32 +37,41 @@ a {
 	
 	grid-template-areas: "cap_logo . services school technology contacts";
 
-	gap: 5em;
+	gap: 60px;
 
-	font-size: 14px;
-	line-height: 23px;
-	font-weight: 700;
+	
 	
 	/* temporary */
-	box-sizing: border-box;
+	/*box-sizing: border-box;
 	border: 1px solid #00ff00;
-	background-color: #00ff001e;	
+	background-color: #00ff001e;	*/
 }
 
 .cap > a {	
 	color: #ffffff;
-	height: 90px;		
+	height: 80px;		
 	padding: 0 7px;
+	padding-top: 10px;
+
+	/*font*/
+	font-size: 14px;
+	line-height: 23px;
+	font-weight: 700;
+	
+	/* сenterng of vertical in tag  <a> */
+	display: flex;
+	align-items: center;
 	
 
 	/* temporary */
-	box-sizing: border-box;
+	/*box-sizing: border-box;
 	border: 1px solid #007bff;
-	background-color: #007bff1e;
+	background-color: #007bff1e;*/
 }
 
 .cap > a:first-child {
-	padding-left: o;
+	padding-left: 0;
+	padding-top: 0;
 }
 
 .cap > a:last-child {
@@ -75,7 +84,7 @@ a {
 
 .top_logo {	
 	grid-area: cap_logo;
-	/*order: 0;*/
+	order: 0;
 }
 
 .top_logo:hover > svg > path:first-child {
@@ -88,20 +97,28 @@ a {
 
 .cap_item-1 {
 	grid-area: services;
-	/*order: 2;*/
+	order: 2;
 }
 
 .cap_item-2 {
 	grid-area: school;
-	/*order: 3;*/
+	order: 3;
 }
 
 .cap_item-3 {
 	grid-area: technology;
-	/*order: 4;*/
+	order: 4;
 }
 
 .cap_item-4 {
 	grid-area: contacts;
-	/*order: 5;*/
+	order: 5;
+}
+
+.line {	
+	height: 1px;	
+	margin: 0 auto;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 5%, rgba(255,255,255,0.3) 95%, rgba(255,255,255,0) 100%);
+	
 }
