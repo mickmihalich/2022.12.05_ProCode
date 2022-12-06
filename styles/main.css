@@ -14,17 +14,21 @@ a {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	/*height: 100vh;*/
+	height: 948px;
+
+	color: #FFFFFF;
 }
 
 .container {
-	max-width: 1110px;
+	max-width: 1140px;
+	padding: 0 15px;
 	margin: 0 auto;
 
 	/* temporary */
-	/*	box-sizing: border-box;
-	border: 1px solid #ff00ff;
-	background-color: #ff00ff1e;*/
+	box-sizing: border-box; /* safe of margin bavovna */
+	/*border: 1px solid #ff00ff;
+	background-color: #ff00ff1e*/
 }
 
 .cap {
@@ -33,7 +37,7 @@ a {
 	grid-template-columns: auto 1fr repeat(4, auto);
 	
 	justify-content: space-between; 
-	align-items: center; /* не працює для ссилок (tag <a>)*/
+	align-items: center; /* не працює для посилань (tag <a>)*/
 	
 	grid-template-areas: "cap_logo . services school technology contacts";
 
@@ -49,7 +53,7 @@ a {
 
 .cap > a {	
 	color: #ffffff;
-	height: 80px;		
+	height: 92px;		
 	padding: 0 7px;
 	padding-top: 10px;
 
@@ -58,20 +62,20 @@ a {
 	line-height: 23px;
 	font-weight: 700;
 	
-	/* сenterng of vertical in tag  <a> */
+	/* сentering of vertical in tag  <a> */
 	display: flex;
 	align-items: center;
 	
 
 	/* temporary */
-	/*box-sizing: border-box;
-	border: 1px solid #007bff;
+	box-sizing: border-box;
+	/*border: 1px solid #007bff;
 	background-color: #007bff1e;*/
 }
 
 .cap > a:first-child {
 	padding-left: 0;
-	padding-top: 0;
+	padding-top: 5px;
 }
 
 .cap > a:last-child {
@@ -116,9 +120,53 @@ a {
 }
 
 .line {	
-	height: 1px;	
+	height: 2px;	
 	margin: 0 auto;
 	width: 100%;
-	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 5%, rgba(255,255,255,0.3) 95%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 5%, rgba(255,255,255,0.3) 95%, rgba(255,255,255,0) 100%);	
+	box-sizing: border-box;
+}
+
+.intro {
+	/*height: calc(100vh - 94px);*/
+	height: 853px;
+
+	display: flex;
+
+	/*align-items: flex-start;     
+    align-content: center;
+    flex-wrap: wrap;*/
+	justify-content: space-between;
+
+	/* temporary */
+	box-sizing: border-box;
+	/*border: 1px solid #ff00ff;*/
+	background-color: #ff00ff1e;
+
+	padding-top: 264px;
+}
+
+.intro_item_title {
+	width: 580px;
+
+	box-sizing: border-box;
+	/*border: 1px solid #ff00ff;*/
+	background-color: #00ffff1e;
+}
+
+.title {
+	font-family: 'GothamProBold';
+	font-size: 40px;
 	
+	color: #FFFFFF;	
+	font-weight: 700;
+}
+
+.line1 {	
+	height: 2px;		
+	width: 133px;
+	margin-top: 19px;
+	background-color: #FED233;
+	/*background: linear-gradient(90deg, #FED23300 0%, #FED233ff 5%, #FED233ff 95%, #FED23300 100%);	*/
+	box-sizing: border-box;	
 }
