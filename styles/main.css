@@ -82,8 +82,10 @@ a {
 	/*padding-right: 0;*/
 }
 
-.cap > a:hover {
-	color: #FED233;
+.cap > a:first-child:hover {
+	stroke-width: 1px;
+	/*stroke: #333333;*/
+	stroke: #FED23366;
 }
 
 /*.cap > a:nth-child(+n+3):hover {*/
@@ -92,6 +94,10 @@ a {
 	border-bottom: 2px solid #FED233;
 	border-top: 2px solid #FED233;	
 	/*border-radius: 10px;*/
+
+	color: #FED233;
+
+	background: linear-gradient(0deg, rgba(254, 210, 51, 0.30) 0%, rgba(254, 210, 51, 0) 15%, rgba(254, 210, 51, 0)85%, rgba(254, 210, 51, 0.30) 100%);	
 }
 
 .top_logo {	
