@@ -288,11 +288,13 @@ a {
 }
 
 .services_grid {
+	padding-top: 98px;
+
 	display: grid;
-	gap: 34px 35 px;
+	gap: 32px ;
 	grid-template-columns: repeat(3, 1fr);
 
-	justify-items: center;
+	justify-content: center;
 
 	box-sizing: border-box;
 	border: 1px solid #ff00ff85;
@@ -300,10 +302,56 @@ a {
 }
 
 .services_grid_item {
-	width: 347px;
+	width: 345px;
 	height: 292px;
 
+	background: #FFFFFF;
 	border: 1px solid #F2F2F2;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 0px 20px #0000000d;
 	border-radius: 7px;
+	
+	text-align: center;	
+
+	color: #333333;
+
+	/* вирішив таки відцентрувати та скинути все на дно */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
 }
+
+.services_grid_item > h2 {
+	font-family: 'GothamProMedium';
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 500; /* Medium */
+
+	margin-top: 22px;
+}
+
+.services_grid_item > svg:first-child {
+	/*padding-top: 45px;*/
+}
+
+.services_grid_item > div:last-child {
+	color: #BDBDBD;
+	width: 90%;
+	border-top: 1px solid #BDBDBD;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 0 auto;
+	height: 62px;
+
+	margin-top: 22px;
+}
+
+.services_grid_item:hover {
+	border: 1px solid #FED233;
+	box-shadow: 0px 0px 20px #FED2330d;
+	/*color: #FED233;*/
+}
+
