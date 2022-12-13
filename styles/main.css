@@ -15,21 +15,36 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
-	max-height: 1440px /* for 2k */
+	max-height: 1440px; /* for 2k */
+
 	/*height: 959px;*/
+	/*min-width: 900px;*/
+
+	min-width: 1140px;
+	min-height: 500px;
 
 	color: #FFFFFF;
+
+	/*display: flex;
+	flex-direction: column;
+	justify-items: center;*/
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto 1fr;
+	/*align-items: center;*/
+
 }
 
 .container {
-	max-width: 1140px;
+	width: 1140px;
 	padding: 0 15px;
 	margin: 0 auto;
 
 	/* temporary */
 	box-sizing: border-box; /* safe of margin bavovna */
-	/*border: 1px solid #ff00ff;
-	background-color: #ff00ff1e*/
+	border: 1px solid #ff00ff;
+	background-color: #ff00ff1e
 }
 
 .cap {
@@ -108,10 +123,12 @@ a {
 
 .top_logo:hover > svg > path:first-child {
 	/*fill: #BDBDBD;*/
+	stroke: #FED233ff;
 }
 
 .top_logo:hover > svg > path:last-child {
 	/*fill: #828282;*/
+	stroke: #ffffff;
 }
 
 .cap_item-1 {
@@ -143,37 +160,50 @@ a {
 }
 
 .intro {
-	height: calc(100vh - 94px);
+	/*height: calc(100vh - 94px);	*/
+
 	/*height: 864px;*/
 
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 	/*align-items: flex-start;     
     align-content: center;
     flex-wrap: wrap;*/
-	justify-content: space-between;
-	align-items: flex-start;
+	/*justify-content: space-between;
+	align-items: flex-start;*/
 
 	/* temporary */
 	box-sizing: border-box;
 	/*border: 1px solid #ff00ff;*/
 	/*background-color: #ff00ff1e;*/
 
-	padding-top: calc(50vh - 190px);
+	/*padding-top: calc(50vh - 190px);*/
 	/*padding-top: 263px;*/
 
 	background-image: url(../images/mouse_scroll.svg);
 	background-repeat: no-repeat;
 	background-size: 21px 30px;
-	background-position: center bottom 83px;
+	background-position: center bottom 5%;
+}
+
+.intro_centr{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	box-sizing: border-box;
+	border: 1px solid #00e1ff;
+	background-color: #00e1ff1e;
 }
 
 .intro_item_title {
 	width: 580px;
 
 	box-sizing: border-box;
-	/*border: 1px solid #ff00ff;*/
-	/*background-color: #00ffff1e;*/
+	border: 1px solid #ff00ff;
+	background-color: #00ffff1e;
 }
 
 .title {
@@ -198,6 +228,7 @@ a {
 	margin-top: 25px;
 	font-size: 18px;
 	line-height: 24px;
+	color: #FFFFFF;	
 }
 
 .contact_us {
@@ -241,7 +272,7 @@ a {
 	/*background-color: #00ffff1e;*/
 
 	margin-top: 16px;
-	margin-right: -5px;
+	/*margin-right: -5px;*/
 }
 
 .intro_item_logo:hover {
