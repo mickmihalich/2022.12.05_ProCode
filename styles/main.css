@@ -119,6 +119,14 @@ a {
 	background: linear-gradient(0deg, rgba(254, 210, 51, 0.30) 0%, rgba(254, 210, 51, 0) 15%, rgba(254, 210, 51, 0)85%, rgba(254, 210, 51, 0.30) 100%);	
 }
 
+/* тимчасово для всіх <а> */
+a:hover {
+	transition: all linear 0.1s;
+}
+a:not(:hover) {
+	transition: all linear 0.3s;
+}
+
 .top_logo {	
 	grid-area: cap_logo;
 	order: 0;
@@ -285,11 +293,17 @@ a {
 .intro_item_logo:hover > svg > path:first-child {
 	fill: #ffffff;
 	stroke: #BDBDBD;	
+	transition: all linear 1s;
 }
 
 .intro_item_logo:hover > svg > path:last-child {
 	fill: #FED233;
 	/*stroke: #BDBDBD;	*/
+	transition: all linear 1s;
+}
+
+.intro_item_logo:not(:hover) > svg > path {
+	transition: all linear 3s;
 }
 
 .list2 {
