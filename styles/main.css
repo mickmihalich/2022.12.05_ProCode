@@ -205,8 +205,8 @@ a {
 	width: 580px;
 
 	box-sizing: border-box;
-	border: 1px solid #ff00ff;
-	background-color: #00ffff1e;
+	/*border: 1px solid #ff00ff;
+	background-color: #00ffff1e;*/
 }
 
 .title {
@@ -255,10 +255,10 @@ a {
 
 	color: #333333;
 	box-sizing: border-box;
+	border: 3px solid #FED23300;	
 }
 
-.contact_us:hover {
-	box-sizing: border-box;
+.contact_us:hover {	
 	background-color: #BDBDBD00;
 	border: 3px solid #FED233;	
 	color: #FFFFFF;
@@ -271,8 +271,8 @@ a {
 
 .intro_item_logo {
 	box-sizing: border-box;
-	border: 1px solid #ff00ff;
-	background-color: #00ffff1e;
+	/*border: 1px solid #ff00ff;
+	background-color: #00ffff1e;*/
 
 	/*margin-top: 16px;
 	/*margin-right: -5px;*/
@@ -339,8 +339,8 @@ a {
 	justify-content: center;
 
 	box-sizing: border-box;
-	border: 1px solid #ff00ff85;
-	background-color: #ff00ff0e;
+	/*border: 1px solid #ff00ff85;*/
+	/*background-color: #ff00ff0e;*/
 }
 
 .services_grid_item {
@@ -394,6 +394,7 @@ a {
 .services_grid_item:hover {
 	border: 2px solid #FED233;
 	box-shadow: 0px 0px 20px #FED2330d;
+	background: radial-gradient(circle, rgba(253,187,45,0) 0%, rgba(253,187,45,0.03) 70%, rgba(253,187,45,0.1) 100%);
 	/*color: #FED233;*/
 }
 
@@ -414,4 +415,9 @@ a {
 .services_grid_item:hover > h2 {
 	filter: drop-shadow(5px 5px 5px #BDBDBD);
 	/*box-shadow: 0px 0px 20px #FED233;*/
+}
+
+.services_grid_item:hover > div {
+	filter: drop-shadow(2px 2px 3px #BDBDBD);
+	color: #828282;
 }
