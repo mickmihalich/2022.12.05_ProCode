@@ -199,8 +199,8 @@ a:not(:hover) {
 
 	/* temporary */
 	box-sizing: border-box;
-	border: 1px solid #ff00ff;
-	background-color: #ff00ff1e;
+	/*border: 1px solid #ff00ff;
+	background-color: #ff00ff1e;*/
 
 	/*padding-top: calc(50vh - 190px);*/
 	/*padding-top: 263px;*/
@@ -338,10 +338,14 @@ a:not(:hover) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	box-sizing: border-box;
+	/*border: 1px solid #ff00ff;
+	background-color: #00ffff1e;*/
 }
 
 .service_wraper {	
-	height: 100vh;
+	height: max(100vh, 872px);
 
 	box-sizing: border-box;
 	/*border: 1px solid #ff00ff;*/
@@ -358,6 +362,9 @@ a:not(:hover) {
 	background-color: #ff00ff1e;*/
 
 	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+
 }
 
 .services_title {
@@ -456,7 +463,7 @@ a:not(:hover) {
 
 .services_grid_item:hover {
 	border: 2px solid #FED233;
-	box-shadow: 0px 0px 20px #FED2330d;
+	box-shadow: 0px 0px 20px #FED23388;
 	background: radial-gradient(circle, rgba(253,187,45,0) 0%, rgba(253,187,45,0.03) 70%, rgba(253,187,45,0.1) 100%);
 	/*color: #FED233;*/
 }
@@ -481,11 +488,13 @@ a:not(:hover) {
 }
 
 .services_grid_item:hover > div {
-	filter: drop-shadow(2px 2px 3px #BDBDBD);
-	color: #828282;
+	filter: drop-shadow(2px 2px 3px #828282);	
+	color: #333333;
+	border-top-color: #333333;
 }
-
-
+.services_grid_item:hover > div > svg > path {
+	fill: #333333;
+}
 
 
 
