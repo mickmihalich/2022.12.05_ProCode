@@ -19,14 +19,14 @@ a {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	min-height: max(100vh, 500px);
 	max-height: 1440px; /* for 2k */
 
 	/*height: 959px;*/
 	/*min-width: 900px;*/
 
 	min-width: 1140px;
-	min-height: 500px;
+	/*min-height: 500px;*/
 
 	color: #FFFFFF;
 
