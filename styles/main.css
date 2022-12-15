@@ -345,7 +345,7 @@ a:not(:hover) {
 }
 
 .service_wraper {	
-	height: max(100vh, 872px);
+	height: max(100vh, 900px);
 
 	box-sizing: border-box;
 	/*border: 1px solid #ff00ff;*/
@@ -492,11 +492,63 @@ a:not(:hover) {
 	color: #333333;
 	border-top-color: #333333;
 }
+
 .services_grid_item:hover > div > svg > path {
 	fill: #333333;
 }
 
+/*****************************/
+/* LIST 3 - Studio  - List 4 */
+/*****************************/
+.list3 {
+	height: max(50vh, 450px);
+	background-color: #F9FAFC;
 
+}
+
+.studio {
+	padding: 76px 0;
+	height: 100%;
+}
+
+.studio > p {
+	display: block;
+	width: max(50%, 800px);	
+}
+
+.studio_grid {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	/*justify-items: center;*/
+	/*justify-content: space-between;*/
+	gap: 75px;	
+}
+
+.studio_grid_item {
+	min-height: 115px;
+	width: 320px;
+
+	background-color: #ff00ff1f;
+}
+
+/**************************/
+/* LIST 4 - Form - List 4 */
+/**************************/
+.list4 {
+	height: max(50vh, 450px);
+	background-image: url(../images/back.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+/****************************/
+/*                          */
+/*      A D A P T I V       */
+/*                          */
+/****************************/
 
 @media only screen and (min-width: 3000px) {	
 	.container {
