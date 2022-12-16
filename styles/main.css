@@ -501,8 +501,10 @@ a:not(:hover) {
 /* LIST 3 - Studio  - List 4 */
 /*****************************/
 .list3 {
-	height: max(50vh, 450px);
+	height: max(50vh, 500px);
 	background-color: #F9FAFC;
+
+	/*min-height: 500px;*/
 
 }
 
@@ -511,31 +513,81 @@ a:not(:hover) {
 	height: 100%;
 }
 
+.studio > h1 {
+	font-family: "GothamProBold";
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 66px;
+	
+	color: #333333;
+	margin-bottom: 0;
+}
+
 .studio > p {
+	margin-top: 1px;
+
+
 	display: block;
 	width: max(50%, 800px);	
+
+	font-family: "GothamProRegular";
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+
+	color: #333333;
 }
 
 .studio_grid {
+	margin-top: 35px;
+
 	display: grid;
 	grid-template-columns: repeat(3, auto);
 	/*justify-items: center;*/
 	/*justify-content: space-between;*/
-	gap: 75px;	
+	gap: 50px;	
 }
 
 .studio_grid_item {
+
 	min-height: 115px;
 	width: 320px;
 
 	background-color: #ff00ff1f;
 }
 
+.studio_grid_item > h2 {
+	font-family: "GothamProBlack";
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 60px;
+
+	color: #FED233;
+
+	margin-bottom: 0px;
+	
+}
+
+.studio_grid_item > div {
+	padding-top: 6px;
+
+
+	border-top: 2px solid #BDBDBD;
+	color: #828282;
+
+	font-family: "GothamProMedium";
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+
+
 /**************************/
 /* LIST 4 - Form - List 4 */
 /**************************/
 .list4 {
-	height: max(50vh, 450px);
+	height: max(50vh, 500px);
 	background-image: url(../images/back.png);
 	background-position: center;
 	background-repeat: no-repeat;
