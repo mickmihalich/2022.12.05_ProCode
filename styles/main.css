@@ -553,7 +553,7 @@ a:not(:hover) {
 	min-height: 115px;
 	width: 320px;
 
-	background-color: #ff00ff1f;
+	/*background-color: #ff00ff1f;*/
 }
 
 .studio_grid_item > h2 {
@@ -582,7 +582,6 @@ a:not(:hover) {
 }
 
 
-
 /**************************/
 /* LIST 4 - Form - List 4 */
 /**************************/
@@ -593,6 +592,10 @@ a:not(:hover) {
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	color: #FFFFFF;
+
+	display: flex;
+	flex-direction: column;	
 }
 
 
