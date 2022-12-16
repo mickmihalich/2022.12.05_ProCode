@@ -501,29 +501,36 @@ a:not(:hover) {
 /* LIST 3 - Studio  - List 4 */
 /*****************************/
 .list3 {
-	height: max(50vh, 500px);
+	
 	background-color: #F9FAFC;
+
+	display: flex;
+	flex-direction: column;
 
 	/*min-height: 500px;*/
 
 }
 
 .studio {
-	padding: 76px 0;
-	height: 100%;
+	height: max(50vh, 650px);
+	/*padding: 76px 0;*/
+	/*height: 100%;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.studio > h1 {
+.studio_center > h1 {
 	font-family: "GothamProBold";
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 66px;
 	
 	color: #333333;
-	margin-bottom: 0;
+	margin: 0;
 }
 
-.studio > p {
+.studio_center > p {
 	margin-top: 1px;
 
 
@@ -586,7 +593,7 @@ a:not(:hover) {
 /* LIST 4 - Form - List 4 */
 /**************************/
 .list4 {
-	height: max(50vh, 500px);
+	
 	background-image: url(../images/back.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -597,6 +604,12 @@ a:not(:hover) {
 	display: flex;
 	flex-direction: column;	
 }
+
+.form {
+	height: max(50vh, 500px);
+}
+
+
 
 
 /****************************/
