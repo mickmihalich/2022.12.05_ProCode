@@ -352,7 +352,8 @@ a:not(:hover) {
 	/*background-color: #ff00ff1e;*/
 	
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	
 	justify-content: center;
 }
 
