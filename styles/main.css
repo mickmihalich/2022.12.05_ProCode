@@ -15,10 +15,18 @@ a {
 .list1 {
 	/* 1st page with big background page*/
 	/* One Big Block */
-	background-image: url(../images/back.png);
-	background-position: center;
+	background-image: url(../images/mouse_scroll.svg), url(../images/back.png);
+	background-position: center bottom 5%, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 21px 30px, cover;
+
+	/*2nd background:
+	background-image: url(../images/mouse_scroll.svg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 21px 30px;
+	background-position: center bottom 5%;*/
+
+
 	min-height: max(100vh, 500px);
 	max-height: 1440px; /* for 2k */
 
@@ -235,10 +243,10 @@ a:not(:hover) {
 	/*padding-top: calc(50vh - 190px);*/
 	/*padding-top: 263px;*/
 
-	background-image: url(../images/mouse_scroll.svg);
+	/*background-image: url(../images/mouse_scroll.svg);
 	background-repeat: no-repeat;
 	background-size: 21px 30px;
-	background-position: center bottom 5%;
+	background-position: center bottom 5%;*/
 }
 
 .intro_centr{
