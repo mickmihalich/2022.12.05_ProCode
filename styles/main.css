@@ -229,8 +229,8 @@ a:not(:hover) {
 
 	/* temporary */
 	box-sizing: border-box;
-	border: 1px solid #ff00ff;
-	background-color: #ff00ff1e;
+	/*border: 1px solid #ff00ff;
+	background-color: #ff00ff1e;*/
 
 	/*padding-top: calc(50vh - 190px);*/
 	/*padding-top: 263px;*/
