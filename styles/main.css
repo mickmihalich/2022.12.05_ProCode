@@ -30,14 +30,19 @@ a {
 
 	color: #FFFFFF;
 
-	/*display: flex;
+	display: flex;
 	flex-direction: column;
-	justify-items: center;*/
+	justify-items: center;
+	justify-content: center;
 
-	display: grid;
+	/*display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto auto 1fr;
+	grid-template-rows: auto auto 1fr;*/
 	/*align-items: center;*/
+
+	box-sizing: border-box;
+	/*background-color: #FED233cc;
+	border: 1px solid #FED233;*/
 
 }
 
@@ -52,7 +57,25 @@ a {
 	background-color: #ff00ff1e*/
 }
 
+.top4ik {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	min-width: 1140px;
+
+	/*background-image: url(../images/back.png);*/
+	background-color: #000000bb;
+	background-position: top;	
+	background-repeat: no-repeat;
+	background-size: cover;	
+
+}
+
 .cap {
+	
+	
 	display: grid;		
 
 	grid-template-columns: auto 1fr repeat(4, auto);
@@ -144,6 +167,13 @@ a:not(:hover) {
 	order: 0;
 }
 
+/* ProCode - top left logo */
+/* width="123" height="19" */
+.top_logo > svg {
+	width: 123px;
+	height: 19px;
+}
+
 .top_logo:hover > svg > path:first-child {
 	/*fill: #BDBDBD;*/
 	stroke: #FED233ff;
@@ -199,8 +229,8 @@ a:not(:hover) {
 
 	/* temporary */
 	box-sizing: border-box;
-	/*border: 1px solid #ff00ff;
-	background-color: #ff00ff1e;*/
+	border: 1px solid #ff00ff;
+	background-color: #ff00ff1e;
 
 	/*padding-top: calc(50vh - 190px);*/
 	/*padding-top: 263px;*/
@@ -502,6 +532,10 @@ a:not(:hover) {
 /* LIST 3 - Studio  - List 4 */
 /*****************************/
 .list3 {
+	min-height: max(50vh, 800px);
+	max-height: 1440px; /* for 2k */
+
+	min-width: 1140px;
 	
 	background-color: #F9FAFC;
 
@@ -594,6 +628,10 @@ a:not(:hover) {
 /* LIST 4 - Form - List 4 */
 /**************************/
 .list4 {
+	min-height: max(50vh, 800px);
+	max-height: 1440px; /* for 2k */
+
+	min-width: 1140px;
 	
 	background-image: url(../images/back.png);
 	background-position: center;
@@ -628,6 +666,11 @@ a:not(:hover) {
 		width: 590px;
 		height: 370px;		
 	}
+
+	.top_logo > svg {
+		width: 246px;
+		height: 38px;
+	}
 	
 	.services_grid {
 		grid-template-columns: repeat(6, auto);
@@ -659,6 +702,11 @@ a:not(:hover) {
 	.intro_item_logo > svg {
 		width: calc(0.75 * 590px);
 		height: calc(0.75 * 370px);		
+	}
+
+	.top_logo > svg {
+		width:  calc(0.75 * 246px);
+		height:  calc(0.75 * 38px);
 	}
 
 	.cap > a {
