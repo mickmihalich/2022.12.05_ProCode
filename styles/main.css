@@ -335,9 +335,9 @@ a:not(:hover) {
 	/*background-image: url(../images/pro_code.svg);		
   	transform: rotate(30deg);*/
 
-	display: flex;
+	/*display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;*/
 
 	box-sizing: border-box;
 	/*border: 1px solid #ff00ff;
