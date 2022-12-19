@@ -366,19 +366,21 @@ a:not(:hover) svg > path {
 }
 
 .intro_item_logo:hover > svg > path:first-child {
+	transition: 1s;
 	fill: #ffffff;
 	stroke: #BDBDBD;	
-	transition: all linear 1s;
+	
 }
 
 .intro_item_logo:hover > svg > path:last-child {
+	transition: 1s;
 	fill: #FED233;
 	/*stroke: #BDBDBD;	*/
-	transition: all linear 1s;
+	
 }
 
 .intro_item_logo:not(:hover) > svg > path {
-	transition: all linear 3s;
+	transition: 3s;
 }
 
 
