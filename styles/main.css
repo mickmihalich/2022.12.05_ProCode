@@ -182,6 +182,12 @@ a:not(:hover) {
 	transition: all linear 0.35s;
 }
 
+a:hover svg > path {
+	transition: all linear 0.15s;
+}
+a:not(:hover) svg > path {
+	transition: all linear 0.35s;
+}
 
 
 .top_logo {	
