@@ -356,31 +356,42 @@ a:not(:hover) svg > path {
 	/*margin-right: -5px;*/
 }
 
+
 .intro_item_logo > svg {
 	width: 295px;
 	height: 185px;
 }
 
 .intro_item_logo:hover {
+	transition: cursor 1s ease-in-out;
 	cursor: pointer;
 }
 
 .intro_item_logo:hover > svg > path:first-child {
-	transition: 1s;
+	transition: stroke 1s ease-in-out;
+	transition: fill 1s ease-in-out;
 	fill: #ffffff;
 	stroke: #BDBDBD;	
 	
 }
 
 .intro_item_logo:hover > svg > path:last-child {
-	transition: 1s;
+	transition: stroke 1s ease-in-out;
+	transition: fill 1s ease-in-out;
+	
 	fill: #FED233;
 	/*stroke: #BDBDBD;	*/
 	
 }
 
-.intro_item_logo:not(:hover) > svg > path {
-	transition: 3s;
+svg:hover > path {
+	transition: stroke 3s ease-in-out;
+	transition: fill 3s ease-in-out;
+
+	fill: #FED233;
+}
+.contact_us_text:hover {
+	color: #FED233;
 }
 
 
