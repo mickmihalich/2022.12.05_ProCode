@@ -683,10 +683,17 @@ svg:hover > path {
 
 	display: flex;
 	flex-direction: column;	
+	justify-content: center;
 }
 
 .form {
 	height: max(50vh, 500px);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-color: rgba(153, 205, 50, 0.171);
 }
 
 
