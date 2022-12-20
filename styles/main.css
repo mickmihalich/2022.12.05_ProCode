@@ -720,7 +720,7 @@ svg:hover > path {
 		height: 38px;
 	}
 	
-	.services_grid {
+	.services_grid, .studio_grid{
 		grid-template-columns: repeat(6, auto);
 	}
 
