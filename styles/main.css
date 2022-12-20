@@ -440,7 +440,7 @@ svg:hover > path {
 }
 
 .services_title {
-	/*margin-top: 122px;*/
+	margin-top: 95px;
 	/*margin-left: -3px;*/
 	margin-bottom: 0;
 
@@ -588,12 +588,21 @@ svg:hover > path {
 }
 
 .studio {
-	height: max(50vh, 650px);
+	height: max(50vh, 500px);
 	/*padding: 76px 0;*/
 	/*height: 100%;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.h95 {
+	height: 95px;
+	background-color: #FED233;
+}
+
+.studio_center {
+	/*margin-top: 95px;*/
 }
 
 .studio_center > h1 {
@@ -604,6 +613,7 @@ svg:hover > path {
 	
 	color: #333333;
 	margin: 0;
+	
 }
 
 .studio_center > p {
@@ -696,7 +706,20 @@ svg:hover > path {
 	background-color: rgba(153, 205, 50, 0.171);
 }
 
+.form_center > h1 {
+	font-family: "GothamProBold";
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 66px;
+	
+	color: #ffffff;
+	margin: 0;
 
+}
+
+.form_username, .form_phone {
+	margin-top: 44px;
+}
 
 
 /****************************/
@@ -720,7 +743,7 @@ svg:hover > path {
 		height: 38px;
 	}
 	
-	.services_grid, .studio_grid{
+	.services_grid{
 		grid-template-columns: repeat(6, auto);
 	}
 
@@ -738,6 +761,9 @@ svg:hover > path {
 	.line1 {
 		width: 266px;
 		height: 4px;
+	}
+	.studio_grid{
+		grid-template-columns: repeat(6, auto);
 	}
 
 }
@@ -760,4 +786,5 @@ svg:hover > path {
 	.cap > a {
 		font-size: 18px;
 	}
+
 }
