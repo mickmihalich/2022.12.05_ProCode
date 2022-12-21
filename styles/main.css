@@ -848,6 +848,7 @@ svg:hover > path {
 .list6 {
 	min-height: max(35vh, 442px);
 	background-color: #141414;
+        min-width: 1140px;
 }
 .contact {
 	min-height: max(35vh, calc(442px - 95px));
@@ -902,13 +903,14 @@ svg:hover > path {
 
 .footer {	
 	background-color: #141414;
+        min-width: 1140px;
 }
 .footer_center {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border: 5px solid #FED233;
-	background-color: #fed23330;
+	/*border: 5px solid #FED233;
+	background-color: #fed23330;*/
 	box-sizing: border-box;
 	height: 85px;
 }
