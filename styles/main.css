@@ -731,6 +731,22 @@ svg:hover > path {
 	height: 100%;
 	border-radius: 7px;
 	padding-inline: 30px;	
+
+	font-family: "GothamProMedium";
+	font-weight: 500;
+
+	font-size: 16px;
+	color: #333333;
+
+	text-shadow(5px 5px 10px #000);
+}
+
+::placeholder {
+	font-family: "GothamProMedium";
+	font-weight: 500;
+
+	font-size: 14px;
+	color: #333333;
 }
 
 .input_checkbox {
