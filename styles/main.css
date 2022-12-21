@@ -716,11 +716,30 @@ svg:hover > path {
 	margin: 0;
 
 }
-
-.form_username, .form_phone {
-	margin-top: 44px;
+.form_username_box {
+	margin-top: 40px;
 }
 
+.form_username_box, .form_phone_box {
+	width: 400px;
+	height: 59px;
+	margin-bottom: 20px;
+}
+
+.form_username, .form_phone {
+	width: 100%;
+	height: 100%;
+	border-radius: 7px;
+	padding-inline: 30px;	
+}
+
+.input_checkbox {
+	border-radius: 100%;
+}
+
+.form_submit {
+
+}
 
 /****************************/
 /*                          */
@@ -743,7 +762,7 @@ svg:hover > path {
 		height: 38px;
 	}
 	
-	.services_grid{
+	.services_grid, .studio_grid{
 		grid-template-columns: repeat(6, auto);
 	}
 
@@ -762,10 +781,7 @@ svg:hover > path {
 		width: 266px;
 		height: 4px;
 	}
-	.studio_grid{
-		grid-template-columns: repeat(6, auto);
-	}
-
+	
 }
 
 @media only screen and (min-width: 2000px) and (max-width: 2999.98px) {	
@@ -786,5 +802,6 @@ svg:hover > path {
 	.cap > a {
 		font-size: 18px;
 	}
+	
 
 }
