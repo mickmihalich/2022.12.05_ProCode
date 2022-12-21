@@ -28,7 +28,7 @@ a {
 
 
 	min-height: max(100vh, 500px);
-	max-height: 1440px; /* for 2k */
+	max-height: 1440px;/* for 2k */
 
 	/*height: 959px;*/
 	/*min-width: 900px;*/
@@ -60,7 +60,7 @@ a {
 	margin: 0 auto;
 
 	/* temporary */
-	box-sizing: border-box; /* safe of margin bavovna */
+	box-sizing: border-box;/* safe of margin bavovna */
 	/*border: 1px solid #ff00ff;
 	background-color: #ff00ff1e*/
 }
@@ -102,8 +102,8 @@ a {
 
 	grid-template-columns: auto 1fr repeat(4, auto);
 	
-	justify-content: space-between; 
-	align-items: center; /* не працює для посилань (tag <a>)*/
+	justify-content: space-between;
+	align-items: center;/* не працює для посилань (tag <a>)*/
 	
 	grid-template-areas: "cap_logo . services school technology contacts";
 
@@ -249,7 +249,7 @@ a:not(:hover) svg > path {
 	flex-direction: column;
 	justify-content: center;
 
-	/*align-items: flex-start;     
+	/*align-items: flex-start;
     align-content: center;
     flex-wrap: wrap;*/
 	/*justify-content: space-between;
@@ -312,7 +312,7 @@ a:not(:hover) svg > path {
 	color: #FFFFFF;	
 }
 
-.contact_us {
+.contact_us, .form_submit {
 	margin-top: 47px;
 
 	width: 266px;
@@ -336,13 +336,13 @@ a:not(:hover) svg > path {
 	border: 3px solid #FED23300;	
 }
 
-.contact_us:hover {	
+.contact_us:hover, .form_submit:hover {	
 	background-color: #BDBDBD00;
 	border: 3px solid #FED233;	
 	color: #FFFFFF;
 }
 
-.contact_us:hover > svg {
+.contact_us:hover > svg, .form_submit:hover > svg {
 	fill: #FFFFFF;
 	
 }
@@ -390,9 +390,7 @@ svg:hover > path {
 
 	fill: #FED233;
 }
-.contact_us_text:hover {
-	color: #FED233;
-}
+
 
 
 /*********************/
@@ -449,8 +447,6 @@ svg:hover > path {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 66px;
-	letter-spacing: 0em;
-	text-align: left;
 }
 
 .services_title_detail {
@@ -462,8 +458,6 @@ svg:hover > path {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 28px;
-	letter-spacing: 0em;
-	text-align: left;
 }
 
 .services_grid {
@@ -509,7 +503,7 @@ svg:hover > path {
 	font-family: 'GothamProMedium';
 	font-size: 18px;
 	line-height: 24px;
-	font-weight: 500; /* Medium */
+	font-weight: 500;/* Medium */
 
 	margin-top: 22px;
 }
@@ -574,7 +568,7 @@ svg:hover > path {
 /*****************************/
 .list3 {
 	min-height: max(50vh, 800px);
-	max-height: 1440px; /* for 2k */
+	max-height: 1440px;/* for 2k */
 
 	min-width: 1140px;
 	
@@ -680,7 +674,7 @@ svg:hover > path {
 /**************************/
 .list4 {
 	min-height: max(50vh, 800px);
-	max-height: 1440px; /* for 2k */
+	max-height: 1440px;/* for 2k */
 
 	min-width: 1140px;
 	
@@ -703,7 +697,7 @@ svg:hover > path {
 	flex-direction: column;
 	justify-content: center;
 
-	background-color: rgba(153, 205, 50, 0.171);
+	/*background-color: rgba(153, 205, 50, 0.171);*/
 }
 
 .form_center > h1 {
@@ -741,7 +735,7 @@ svg:hover > path {
 	text-shadow(5px 5px 10px #000);
 }
 
-::placeholder {
+.form_username::placeholder, .form_phone::placeholder {
 	font-family: "GothamProMedium";
 	font-weight: 500;
 
@@ -749,13 +743,196 @@ svg:hover > path {
 	color: #333333;
 }
 
-.input_checkbox {
-	border-radius: 100%;
+.input_checkbox:checked {	 /* by don't worked*/
+	color: #FED233;
 }
 
 .form_submit {
+	margin-top: 55px;
+}
+
+.checkbox_box, .checkbox_box > label {
+	padding-left: 10px;
+	margin-top: 25px;
+
+	font-family: "GothamProRegular";
+	font-weight: 400;
+
+	font-size: 14px;
+	color: #ffffff;
+}
+
+/*************************/
+/* LIST 5 - Technologies */
+/*************************/
+.list5 {
+	min-height: max(65vh, 815px);
+}
+.technologies {
+	min-height: max(65vh, 815px);
+}
+.technology_center_top {
 
 }
+
+.technology_center_top > h1 {
+	font-family: "GothamProBold";
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 66px;
+	
+	color: #333333;
+	margin: 0;
+
+	margin-top: 23px;
+	
+}
+
+.technology_center_top > p {
+	margin-top: 10px;
+	width: 540px;
+
+	color: #333333;
+	font-family: 'GothamProRegular';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+
+}
+
+.technologies_grid {
+	margin-top: 35px;
+
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	/*justify-items: center;*/
+	/*justify-content: space-between;*/
+	gap: 50px;	
+}
+
+.technologies_item {
+
+	min-height: 115px;
+	width: 320px;
+
+	/*background-color: #ff00ff1f;*/
+}
+
+.technologies_item > h2 {
+	font-family: "GothamProBlack";
+	font-weight: 900;
+	font-size: 32px;
+	line-height: 60px;
+
+	color: #FED233;
+
+	margin-bottom: 0px;
+	
+}
+
+.technologies_item > div {
+	padding-top: 6px;
+
+	border-top: 2px solid #BDBDBD;
+	color: #828282;
+
+	font-family: "GothamProMedium";
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+/*************************/
+/*   LIST 6 - Contact    */
+/*************************/
+.list6 {
+	min-height: max(35vh, 442px);
+	background-color: #141414;
+}
+.contact {
+	min-height: max(35vh, calc(442px - 95px));
+}
+
+.contact_centr > h1 {
+	font-family: "GothamProBold";
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 66px;
+	
+	color: #ffffff;
+	margin: 0;
+
+	margin-top: 35px;
+}
+.contact_centr > h1 >span {
+	position: relative;
+	top: 15px;
+	padding-left: 15px;
+}
+.contact_centr > .contact_us{
+	margin-top: 32px;
+}
+
+.contact_centr > .email {
+	display: block;
+	font-family: "GothamProBold";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 23px;
+
+	color: #FFFFFF;
+	margin-top: 35px;
+}
+.contact_centr > .phone {
+	display: block;
+	font-family: "GothamProBold";
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 39px;
+
+	color: #FFFFFF;
+}
+.h80 {
+	display: block;
+	height: 80px;
+}
+
+
+
+
+.footer {	
+	background-color: #141414;
+}
+.footer_center {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 5px solid #FED233;
+	background-color: #fed23330;
+	box-sizing: border-box;
+	height: 85px;
+}
+.footer_words {
+	display: block;
+	font-family: "GothamProBold";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 39px;
+
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /****************************/
 /*                          */
