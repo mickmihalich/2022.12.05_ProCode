@@ -920,6 +920,7 @@ svg:hover > path {
 	line-height: 39px;
 
 	color: #FFFFFF;
+	text-decoration: underline 1px #ffffff;
 }
 
 
