@@ -1046,15 +1046,16 @@ svg:hover > path {
 @media screen and (max-width: 1160px) {
 	.container {
 		width: 100%;
-		background-color: #fed23328;
+		/*background-color: #fed23328;*/
 	}
 	.top4ik, .list1, .list2, .list3, .list4, .list5, .list6, .footer {
 		width: 100%;
 		min-width: 100%;
-		background-color: #33fe5528;		
+		/*background-color: #33fe5528;		*/
 	}
 	.services_grid, .technologies_grid, .studio_grid {
 		grid-template-columns: repeat(2, auto);
+		justify-items: center;
 	}
 	.service_wraper, .services {
 		min-height: 1500px;
@@ -1077,8 +1078,15 @@ svg:hover > path {
 		min-height: 2500px;
 		justify-items: flex-start;
 	}
-	.studio_center > p {
+	.technology_center_top > p, .studio_center > p, .services_title_detail {
 		width: 100%;
+	}
+	.technologies {
+		min-height: 1600px;
+	}
+
+	.container {
+		min-width: 510px;
 	}
 
 }
