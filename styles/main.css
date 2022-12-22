@@ -929,22 +929,43 @@ svg:hover > path {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 	/*border: 5px solid #FED233;
 	background-color: #fed23330;*/
 	box-sizing: border-box;
 	height: 85px;
 }
 .footer_words {
-	display: block;
+	height: 100%;
+	display: flex;	
+	align-items: center;
 	font-family: "GothamProBold";
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 39px;
+	padding: 0 7px;
 
 	color: #FFFFFF;
 	text-decoration: underline 1px #ffffff;
 }
+.footer_words:hover {
+	box-sizing: border-box;
+	border-bottom: 2px solid #FED233;
+	border-top: 2px solid #FED233;	
+	/*border-radius: 10px;*/
 
+	color: #FED233;
+
+	background: linear-gradient(0deg, rgba(254, 210, 51, 0.30) 0%, rgba(254, 210, 51, 0) 15%, rgba(254, 210, 51, 0)85%, rgba(254, 210, 51, 0.30) 100%);	
+
+	text-decoration: none;
+	transition: all linear 0.15s;
+	
+}
+
+.footer_words:not(:hover) {
+	transition: all linear 0.35s;
+}
 
 
 
