@@ -1042,3 +1042,43 @@ svg:hover > path {
 	
 
 }
+
+@media screen and (max-width: 1160px) {
+	.container {
+		width: 100%;
+		background-color: #fed23328;
+	}
+	.top4ik, .list1, .list2, .list3, .list4, .list5, .list6, .footer {
+		width: 100%;
+		min-width: 100%;
+		background-color: #33fe5528;		
+	}
+	.services_grid, .technologies_grid, .studio_grid {
+		grid-template-columns: repeat(2, auto);
+	}
+	.service_wraper, .services {
+		min-height: 1500px;
+		justify-items: flex-start;
+	}
+	.intro_item_logo {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 830px) {
+	.cap {
+		gap: 0;
+	}
+	.services_grid, .technologies_grid, .studio_grid {
+		grid-template-columns: auto;
+		justify-items: center;
+	}
+	.list2, .service_wraper, .services {
+		min-height: 2500px;
+		justify-items: flex-start;
+	}
+	.studio_center > p {
+		width: 100%;
+	}
+
+}
