@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	font-family: "GothamProRegular";
 
@@ -1049,7 +1052,7 @@ svg:hover > path {
 		/*background-color: #fed23328;*/
 	}
 	.top4ik, .list1, .list2, .list3, .list4, .list5, .list6, .footer {
-		width: 100%;
+		/*width: 100%;*/
 		min-width: 100%;
 		/*background-color: #33fe5528;		*/
 	}
@@ -1086,9 +1089,15 @@ svg:hover > path {
 	}
 
 	.container {
-		min-width: 510px;
+		width: max(100vw, 540px);
 	}
 
+	body {
+		
+		min-width: 540px;
+		
+		/*background-color: #33fe5528;		*/
+	}
 
 
 }
