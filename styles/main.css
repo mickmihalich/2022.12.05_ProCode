@@ -1094,7 +1094,7 @@ svg:hover > path {
 }
 
 @media screen and (max-width: 538px) {
-	.contact_centr > h1 >span {
+	.con        tact_centr > h1 >span {
 		
 		top: 110px;
 		left: 300px;
